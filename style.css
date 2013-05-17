@@ -1,0 +1,248 @@
+/*
+Theme Name: L'Automne à Pekin
+Description: There were little things necessary. This theme has nothing.
+Theme URI: http://quojama.com
+Author: Yuki Koyama
+Author URI: http://quojama.com
+Version: 1.1
+License: WTFPL
+License URI: http://www.wtfpl.net/about/
+*/
+
+
+@charset "UTF-8";
+
+/***CSSのリセット***/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+body {
+	line-height: 1;
+	}
+ol, ul {
+	list-style: none;
+	}
+blockquote, q {
+	quotes: none;
+	}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+/***ここまでCSSリセット***/
+
+/***全体的なリンク関連意味ないのかも***/
+a:link { color:#000000; text-decoration: none; font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;}
+a:visited { color:#000000; text-decoration: none; font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;}
+a:hover { color:#000; text-decoration: none; font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;}
+a:active { color:#000000; text-decoration: none; font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;}
+
+/***Body全体をだいたい***/
+body {
+	position : relative ;
+	width:780px; text-align:left; margin:0 auto; 
+	font-family: "Courier New", Courier, monospace;
+	background-color: #FFF;
+	}
+
+
+/***ヘッダータイトル部分です。***/
+.blogtitle {
+	width:100%;
+	height: 35px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align:left; margin:10px auto; 
+	font-size: 27px;
+	}
+	a:hover {color: #F30;}
+
+.blogtitlehead a:link {
+	font-size: 80px;
+	font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;
+	}
+
+/***ヘッダー部分のDescription***/
+#description {
+	font-size:12px;
+	font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;
+	}
+
+/***ヘッダー下の線***/
+.blogtitleline {
+	width: 780px;
+	height: 5px; 
+	padding-bottom: 20px;
+	margin-top: 60px; 
+	background: url("i/line_2.gif")no-repeat;
+	}	
+
+/***sidebarとmaincontent全体***/
+.inner {width: 100%; height: 525px;}
+
+/***左側のサイドバー***/
+.menulist { 
+	position: relative;
+	float:left;
+	width:100px;
+	height: 525px;
+	line-height: 1.2;
+	font-size: 14px;
+	word-wrap: break-word;
+	}
+
+
+/***sidebar.phpに書いてるカスタムメニューのところ今は使ってない***/
+.sidebarphoto {
+	font-size: 9px;
+	padding-left: 3px;
+	}
+	
+
+/***アコーディオンメニューを使った時の親について***/
+.listpapa {
+	font-size: 14px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	}
+
+.listpapa a:link {font-size: 20px;}
+			a:hover {color: #F30;}
+
+/***アコーディオンメニューを使った時の子について***/
+.listsmall {
+	font-size: 9px;
+	padding-left: 5px;
+	padding-right: 10px;	
+	line-height: 1.4; 
+	word-wrap: break-word;
+	}
+.listsmall 	a:link {font-size: 12px;}
+				a:hover {color: #F30;}
+
+
+/***右側のメイン部分***/	
+.maincontent {
+	min-height: 525px;
+  	height: auto !important;
+  	height: 525px;
+	position: relative;
+	float:left;
+	width:680px;
+	text-align:left;
+	font-size:16px;
+	font-family: "Courier New", Courier, monospace;
+	}
+
+/***aboutなど固定ページのテキストについて***/
+.post_content { font-size:14px;
+	font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;
+	line-height: 1.4;
+	}
+
+/***blogのタイトル***/
+.contentheader a:link {font-family:Arial, Helvetica, sans-serif;}
+						a:hover {color: #F30;}
+.contentheader {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	}
+
+/***ブログのメインコンテンツ部分***/	
+.postcontents {
+	font-size:12px;
+	line-height:1.6;
+	padding-top:12px;
+	padding-bottom:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+
+/***Postedの部分***/
+#postinfotext {
+	text-align:end;
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-right: 5px;
+	padding-bottom:5px;
+	font-weight:normal;
+	}
+	
+/***矢印のNavigation***/
+.navigation {text-align:right; height: 10px; padding-right: 5px;}
+	
+/*** Images ***/
+.post_content img { margin: 0; height: auto; max-width: 785px; width: auto; }
+.post_content .attachment img { max-width: 785px; }
+.post_content .alignleft, .post_content img.alignleft { display: inline; float: left; margin-right: 15px; margin-top: 4px; }
+.post_content .alignright, .post_content img.alignright { display: inline; float: right; margin-left: 15px; margin-top: 4px; }
+.post_content .aligncenter, .post_content img.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+.post_content img.alignleft, .post_content img.alignright, .post_content img.aligncenter { margin-bottom: 12px; }
+.post_content .wp-caption { background: #333; line-height: 18px; margin-bottom: 20px; padding: 4px; text-align: center; }
+.post_content .wp-caption img { margin: 5px 5px 0; }
+.post_content .wp-caption p.wp-caption-text { color: #000; font-size: 12px; margin: 5px; }
+.post_content .wp-smiley { margin: 0; }
+.post_content .gallery { margin: 0 auto 18px; }
+.post_content .gallery .gallery-item { float: left; margin-top: 0; text-align: center; width: 33%; }
+.post_content .gallery img {  }
+.post_content .gallery .gallery-caption { color: #888; font-size: 12px; margin: 0 0 15px; }
+.post_content .gallery dl { margin: 0; }
+.post_content .gallery img {  }
+.post_content .gallery br+br { display: none; }
+.post_content .attachment img { /* single attachment images should be centered */ display: block; margin: 0 auto; }
+
+
+/***Footer***/
+.footer {
+	position:relative;
+	width:100%;
+	padding-top: 15px;
+	clear : both ;
+	height:25px;
+	text-align:left;
+	font-size:10px;
+	font-family: Helvetica, Arial, sans-serif ;
+	font-weight: bold;
+	}
+.footer a:hover {color:#F30; }
+
